@@ -1,0 +1,43 @@
+body {
+    position: relative;
+    margin:0 auto;
+    height:100%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(171, 179, 197);
+}
+
+#num {
+    width: 15rem;
+}
+
+h2,h4,h5{
+    font-family: 'Inria Sans', sans-serif;
+    margin:0 auto;
+}
+
+.comments_heading{
+    padding-bottom: 4rem;
+}
+
+.comments_title{
+    float: left;
+    padding-bottom: 1rem;
+
+}
+
+.goback{
+    float: right;
+    padding-bottom: 1rem;
+}
+
+.num_posts{
+    padding-bottom: 1rem;
+}
+
+img{
+    padding-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
