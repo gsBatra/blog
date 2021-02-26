@@ -11,7 +11,7 @@ $(document).ready(function() {
     $(".posts").on('click','.card', function() {
         let id = $(this).attr('id');
         $('.num_posts').hide();
-        $('.posts').empty();
+        $('.posts').hide();
         $('.comments').empty();
         $('.comments_heading').show();
         $.ajax({
@@ -42,9 +42,8 @@ $(document).ready(function() {
     $('.goback').click(function() {
         $('.num_posts').show();
         $('.comments_heading').hide();
-        $('.posts').empty();
+        $('.posts').show();
         $('.comments').empty();
-        fetchPosts();
     });
 
     function fetchPosts() {
