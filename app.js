@@ -14,7 +14,7 @@ $(document).ready(function() {
         return false;
     });
 
-    // get comments from API on post click
+    // get comments from API on blog post click
     $(".posts").on('click','.card', function() {
         let id = $(this).attr('id');
         $('.num_posts').hide();
