@@ -1,5 +1,11 @@
+// Gagandeep Batra
+// gsb5195@psu.edu
+// Blog Assignment
+// Professor Melusky
+// 2/25/2021
+
 $(document).ready(function() {
-    var num_results;
+    var num_results; // Get number of posts
     $('#submitResults').click(function() {
         num_results = $('#num').val();
         $('#num').val('');
@@ -8,6 +14,7 @@ $(document).ready(function() {
         return false;
     });
 
+    // get comments from API on post click
     $(".posts").on('click','.card', function() {
         let id = $(this).attr('id');
         $('.num_posts').hide();
@@ -39,13 +46,16 @@ $(document).ready(function() {
         return false;
     });
 
+    // go back to posts
     $('.goback').click(function() {
         $('.num_posts').show();
         $('.comments_heading').hide();
         $('.posts').show();
         $('.comments').empty();
+        return false;
     });
 
+    // get the posts from API
     function fetchPosts() {
         $.ajax({
             url: 'http://jsonplaceholder.typicode.com/posts',
